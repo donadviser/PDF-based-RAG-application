@@ -1,0 +1,27 @@
+# config.yaml
+chroma_path: "chroma"
+data_path: "data"
+region_name: "us-east-1"
+
+text_splitter:
+  chunk_size: 800
+  chunk_overlap: 80
+  is_separator_regex: false
+
+# Embedding
+embedding:
+  use_bedrock: false
+  model_name: "all-MiniLM-L6-v2"
+  ollama_embedding_model: "nomic-embed-text"
+
+top_k: 5
+
+# LLM
+llm:
+  use_bedrock: false
+  model_name: "mistral"
+  temperature: 0.0
+  max_tokens: 512
+  top_p: 1.0
+  frequency_penalty: 0.0
+  presence_penalty: 0.0
